@@ -37,20 +37,20 @@ $monsterrat: 'Montserrat', sans-serif;
 $roboto: 'Roboto', sans-serif;
 
 $base-font-size: 1.6rem;
-$font-size-xl: $base-font-size * 3;
-$font-size-lg: $base-font-size * 2;
-$font-size-md: $base-font-size * 1.5;
-$font-size-reg: $base-font-size;
-$font-size-sm: $base-font-size * 0.9;
-$font-size-xs: $base-font-size * 0.8;
+$font-xl: $base-font-size * 3;
+$font-lg: $base-font-size * 2;
+$font-md: $base-font-size * 1.5;
+$font-reg: $base-font-size;
+$font-sm: $base-font-size * 0.9;
+$font-xs: $base-font-size * 0.8;
 
 $fontSizes: (
-	'font-size-xl': $font-size-xl,
-	'font-size-lg': $font-size-lg,
-	'font-size-md': $font-size-md,
-	'font-size-reg': $font-size-reg,
-	'font-size-sm': $font-size-sm,
-	'font-size-xs': $font-size-xs,
+	'font-xl': $font-xl,
+	'font-lg': $font-lg,
+	'font-md': $font-md,
+	'font-reg': $font-reg,
+	'font-sm': $font-sm,
+	'font-xs': $font-xs,
 );
 
 //border-radius
@@ -75,6 +75,7 @@ $base-border: $base-border-thickness solid $light-gray;
 $base-border-transparent: $base-border-thickness solid transparent;
 
 // spacing
-$base-padding: 0.8rem;
-$base-margin: 0.8rem;
-$base-gap: 0.8rem;
+$base-unit: 0.8rem;
+$base-padding: $base-unit;
+$base-margin: $base-unit;
+$base-gap: $base-unit;

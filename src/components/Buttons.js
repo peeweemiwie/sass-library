@@ -32,9 +32,9 @@ const Buttons = () => {
 			cardBody={
 				<>
 					<h4 className='card-section-title'>Button - filled</h4>
-					<div className='container p-1'>{buttonFilledTheme}</div>
-					<div className='container p-1'>{buttonFilledLight}</div>
-					<div className='container p-1 background-white'>
+					<div className='container p-1 g-1'>{buttonFilledTheme}</div>
+					<div className='container p-1 g-1'>{buttonFilledLight}</div>
+					<div className='container p-1 g-1 background-white'>
 						{buttonFilledDark}
 					</div>
 				</>

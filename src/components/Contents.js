@@ -2,6 +2,7 @@ import BorderRadius from './BorderRadius';
 import Buttons from './Buttons';
 import Colors from './Colors';
 import FontSizes from './FontSizes';
+import Margins from './Margins';
 import Paddings from './Paddings';
 
 const Contents = () => {
@@ -12,6 +13,7 @@ const Contents = () => {
 			<BorderRadius />
 			<Buttons />
 			<Paddings />
+			<Margins />
 		</div>
 	);
 };

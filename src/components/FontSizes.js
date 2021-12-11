@@ -9,8 +9,8 @@ const FontSizes = () => {
 			classNames='FontSizes'
 			cardTitle='Font size'
 			cardBody={fontSizes.map((size, i) => (
-				<p className={`font-size-${size}`} key={`fs-${i}`}>
-					font-size-{size}
+				<p className={`font-${size}`} key={`fs-${i}`}>
+					font-{size}
 				</p>
 			))}
 		/>

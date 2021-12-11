@@ -15,7 +15,7 @@ const BorderRadius = () => {
 		<Card
 			classNames='borderRadius'
 			cardTitle='Border Radius'
-			cardBody={<div className='container'>{content}</div>}
+			cardBody={<div className='container g-1'>{content}</div>}
 		/>
 	);
 };

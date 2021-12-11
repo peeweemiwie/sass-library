@@ -15,15 +15,15 @@
 		font-weight: 300;
 	}
 	.card-title {
-		font-size: var.$font-size-md;
+		font-size: var.$font-md;
 		margin: 0 0 (var.$base-padding * 2) 0;
 	}
 	.card-section-title {
-		font-size: var.$font-size-reg;
+		font-size: var.$font-reg;
 		margin: (var.$base-padding * 1) 0 (var.$base-padding * 1) 0;
 	}
 	.card-body {
-		font-size: var.$font-size-reg;
+		font-size: var.$font-reg;
 		margin: 0;
 	}
 }
