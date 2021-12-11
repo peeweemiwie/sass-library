@@ -1,0 +1,18 @@
+@use '../styles/variables' as var;
+@use 'sass:math';
+
+.card {
+	.card-body {
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: var.$base-padding;
+		}
+
+		.span {
+			font-size: var.$font-size-sm;
+			font-weight: 300;
+			padding: math.div(var.$base-padding, 2);
+		}
+	}
+}

@@ -1,0 +1,80 @@
+@use 'sass:math';
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&family=PT+Mono&family=Roboto+Mono:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap';
+
+/* colors */
+$primary: #27d0ff;
+$success: #22da93;
+$warning: #feb900;
+$danger: #f23557;
+$light: #eee;
+$dark: #1a1a1a;
+$white: white;
+$black: black;
+$gray: #414141;
+$light-gray: #7a7a7a;
+$dark-gray: #202124;
+
+$text-dark: $dark;
+$text-light: $light;
+$body-bg: $dark;
+$card-bg: $dark-gray;
+
+$colors: (
+	'primary': $primary,
+	'success': $success,
+	'warning': $warning,
+	'danger': $danger,
+	'light': $light,
+	'white': $white,
+	'dark': $dark,
+	'black': $black,
+	'gray': $gray,
+	'light-gray': $light-gray,
+	'dark-gray': $dark-gray,
+);
+
+$monsterrat: 'Montserrat', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+$base-font-size: 1.6rem;
+$font-size-xl: $base-font-size * 3;
+$font-size-lg: $base-font-size * 2;
+$font-size-md: $base-font-size * 1.5;
+$font-size-reg: $base-font-size;
+$font-size-sm: $base-font-size * 0.9;
+$font-size-xs: $base-font-size * 0.8;
+
+$fontSizes: (
+	'font-size-xl': $font-size-xl,
+	'font-size-lg': $font-size-lg,
+	'font-size-md': $font-size-md,
+	'font-size-reg': $font-size-reg,
+	'font-size-sm': $font-size-sm,
+	'font-size-xs': $font-size-xs,
+);
+
+//border-radius
+$sm: 4px;
+$md: $sm * 2;
+$lg: $sm * 3;
+$xl: $sm * 4;
+$round: 50%;
+
+$radius: (
+	'sm': $sm,
+	'md': $md,
+	'lg': $lg,
+	'xl': $xl,
+	'round': $round,
+);
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: $sm;
+$base-border: $base-border-thickness solid $light-gray;
+$base-border-transparent: $base-border-thickness solid transparent;
+
+// spacing
+$base-padding: 0.8rem;
+$base-margin: 0.8rem;
+$base-gap: 0.8rem;

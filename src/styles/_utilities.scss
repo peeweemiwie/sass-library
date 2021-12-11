@@ -1,0 +1,83 @@
+@use 'sass:math';
+@use './variables' as var;
+
+$utilities: (
+	'padding': (
+		'prefix': 'p',
+		'values': (
+			0: 0,
+			1: var.$base-padding,
+			2: var.$base-padding * 2,
+			3: var.$base-padding * 3,
+			4: var.$base-padding * 4,
+			5: var.$base-padding * 5,
+			6: var.$base-padding * 6,
+		),
+	),
+	'padding-left': (
+		'prefix': 'pl',
+		'values': (
+			0: 0,
+			1: var.$base-padding,
+			2: var.$base-padding * 2,
+			3: var.$base-padding * 3,
+			4: var.$base-padding * 4,
+			5: var.$base-padding * 5,
+			6: var.$base-padding * 6,
+		),
+	),
+	'padding-top': (
+		'prefix': 'pt',
+		'values': (
+			0: 0,
+			1: var.$base-padding,
+			2: var.$base-padding * 2,
+			3: var.$base-padding * 3,
+			4: var.$base-padding * 4,
+			5: var.$base-padding * 5,
+			6: var.$base-padding * 6,
+		),
+	),
+	'padding-right': (
+		'prefix': 'pr',
+		'values': (
+			0: 0,
+			1: var.$base-padding,
+			2: var.$base-padding * 2,
+			3: var.$base-padding * 3,
+			4: var.$base-padding * 4,
+			5: var.$base-padding * 5,
+			6: var.$base-padding * 6,
+		),
+	),
+	'padding-bottom': (
+		'prefix': 'pb',
+		'values': (
+			0: 0,
+			1: var.$base-padding,
+			2: var.$base-padding * 2,
+			3: var.$base-padding * 3,
+			4: var.$base-padding * 4,
+			5: var.$base-padding * 5,
+			6: var.$base-padding * 6,
+		),
+	),
+);
+
+// generate utility classes
+@each $property, $map in $utilities {
+	$prefix: map-get($map, 'prefix');
+	$values: map-get($map, 'values');
+
+	@each $k, $v in $values {
+		@if ($k == 'default') {
+			.#{$prefix} {
+				#{$property}: $v;
+			}
+		} @else {
+			.#{$prefix}-#{$k} {
+				#{$property}: $v;
+			}
+		}
+	}
+}

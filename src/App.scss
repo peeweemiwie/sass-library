@@ -1,0 +1,9 @@
+@use './styles/variables' as var;
+@use './styles/typography';
+.App {
+	border: var.$base-border-thickness solid var.$gray;
+	border-radius: var.$xl;
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: var.$base-padding * 2;
+}

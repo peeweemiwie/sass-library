@@ -1,0 +1,26 @@
+@use '../variables' as var;
+@use '../typography' as ty;
+@use '../fontSizes' as fs;
+@use 'sass:math';
+
+.btn {
+	border: var.$base-border-transparent;
+	border-radius: var.$base-border-radius;
+	padding: math.div(var.$base-padding, 2) var.$base-padding;
+}
+
+@each $key, $val in var.$colors {
+	@if ($key == 'white' or $key == 'light') {
+		.btn-#{$key} {
+			background-color: #{$val};
+			border-color: #{$val};
+			color: var.$black;
+		}
+	} @else {
+		.btn-#{$key} {
+			background-color: #{$val};
+			border-color: #{$val};
+			color: var.$white;
+		}
+	}
+}
