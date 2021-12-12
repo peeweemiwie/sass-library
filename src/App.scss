@@ -1,9 +1,13 @@
 @use './styles/variables' as var;
 @use './styles/typography';
 .App {
-	border: var.$base-border-thickness solid var.$gray;
-	border-radius: var.$xl;
-	max-width: 60rem;
-	margin: 0 auto;
-	padding: var.$base-padding * 2;
+	display: grid;
+	grid-template-areas:
+		'header header'
+		'nav content';
+	grid-template-columns: 1fr 5fr;
+	.header {
+		grid-area: header;
+	}
+	gap: var.$base-gap;
 }

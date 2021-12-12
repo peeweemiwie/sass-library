@@ -158,6 +158,15 @@ $utilities: (
 			6: var.$base-unit * 6,
 		),
 	),
+	'display': (
+		'prefix': 'd',
+		'value': (
+			'flex': 'flex',
+			'block': 'block',
+			'i-flex': 'inline-flex',
+			'i-block': 'inline-block',
+		),
+	),
 );
 
 // generate utility classes

@@ -32,6 +32,23 @@ $colors: (
 	'light-gray': $light-gray,
 	'dark-gray': $dark-gray,
 );
+$colorsTheme: (
+	'primary': $primary,
+	'success': $success,
+	'warning': $warning,
+	'danger': $danger,
+);
+$colorsLight: (
+	'light': $light,
+	'white': $white,
+);
+$colorsDark: (
+	'dark': $dark,
+	'black': $black,
+	'gray': $gray,
+	'light-gray': $light-gray,
+	'dark-gray': $dark-gray,
+);
 
 $monsterrat: 'Montserrat', sans-serif;
 $roboto: 'Roboto', sans-serif;
