@@ -8,6 +8,7 @@
 	border: var.$base-border-transparent;
 	border-radius: var.$base-border-radius;
 	cursor: pointer;
+	font-size: var.$font-sm;
 	padding: math.div(var.$base-padding, 2) var.$base-padding;
 }
 
@@ -27,8 +28,6 @@
 		color: #{$val};
 	}
 	.btn-text-#{$key} {
-		border-radius: 0;
-		border-bottom-color: #{$val};
 		color: #{$val};
 	}
 }
@@ -48,8 +47,6 @@
 		color: #{$val};
 	}
 	.btn-text-#{$key} {
-		border-radius: 0;
-		border-bottom-color: #{$val};
 		color: #{$val};
 	}
 }
