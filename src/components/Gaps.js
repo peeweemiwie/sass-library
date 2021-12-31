@@ -13,10 +13,7 @@ const Gaps = () => {
 		</div>
 	));
 	const gapRow = [...Array(7)].map((_, index) => (
-		<div
-			className={`d-flex rg-${index} p-1 border-gray flex-dir-col`}
-			style={{ maxWidth: '12rem' }}
-		>
+		<div className={`d-flex rg-${index} p-1 border-gray flex-dir-col`}>
 			<span className='border-white'>rg-{index}</span>
 			<span className='border-white'>rg-{index}</span>
 			<span className='border-white'>rg-{index}</span>
@@ -34,16 +31,7 @@ const Gaps = () => {
 			<Card
 				classNames={'Gaps'}
 				cardTitle={'gap'}
-				cardBody={
-					<div
-						className='g-1 d-flex flex-dir-col'
-						style={{
-							maxWidth: '20rem',
-						}}
-					>
-						{gap}
-					</div>
-				}
+				cardBody={<div className='g-1 d-flex flex-dir-col'>{gap}</div>}
 			/>
 			<Card
 				classNames={'Gaps'}
