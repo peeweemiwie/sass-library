@@ -5,6 +5,7 @@ import './Nav.scss';
 const Nav = () => {
 	return (
 		<Card
+			classNames='card-nav'
 			cardBody={
 				<nav className='Nav d-flex flex-dir-col'>
 					<NavLink className='text-primary font-sm mb-1' to='/font-sizes'>

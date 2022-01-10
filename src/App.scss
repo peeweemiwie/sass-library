@@ -1,20 +1,14 @@
 @use './styles/variables' as var;
 @use './styles/typography';
 .App {
-	.header {
-		text-align: center;
-		a {
-			color: var.$white;
-			text-decoration: none;
-		}
-	}
 	.content {
 		display: grid;
 		grid-template-areas: 'nav content';
 		grid-template-columns: 1fr 5fr;
 
 		gap: var.$base-gap;
-		width: min(90vw, 100rem);
+		max-width: 1200px;
 		margin: 0 auto;
+		width: 90vw;
 	}
 }
